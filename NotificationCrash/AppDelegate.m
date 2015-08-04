@@ -25,6 +25,7 @@
     acceptAction.destructive = NO;
     acceptAction.authenticationRequired = NO;
     
+    // NOTE: This decline request is missing a title! This causes the phone to crash.
     UIMutableUserNotificationAction *declineAction = [UIMutableUserNotificationAction new];
     declineAction.identifier = @"declineRequest";
     declineAction.activationMode = UIUserNotificationActivationModeBackground;
